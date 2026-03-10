@@ -1,61 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>The Wealthiest Wealthsite</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-    footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wealthiest Wealthsite</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .crop-container {
+    width: 100%px;  /* Set the desired width for the cropped area */
+    height: 300px; /* Set the desired height for the cropped area */
+    overflow: hidden; /* Ensures any part of the image outside the container is hidden */
+  }
+    .crop-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales the image to cover the entire container while maintaining its aspect ratio. Excess parts are cropped */
+    object-position: center; /* Adjust the focal point (e.g., top, bottom, left, right, or pixel values) */
+  }
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  footer {
+    background-color: #566856;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  /* Navbar Container Styling */
+  .navbar ul {
+    list-style-type: none; /* Removes bullet points */
+    background-color: #333; /* Dark background color */
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers the links horizontally */
+    overflow: hidden; /* Recommended for float methods, good general practice */
+  }
+
+  /* List Item Styling */
+  .navbar li a {
+    display: block; /* Makes the entire area of the link clickable and allows padding */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 14px 16px; /* Spacing inside the links */
+    text-decoration: none; /* Removes underlines from links */
+  }
+
+  /* Hover Effect */
+  .navbar li a:hover {
+    background-color: #111; /* Changes background color on hover */
+  }
+  </style>
 </head>
 <body>
 
-<header>
+<div class="crop-container">
+  <img src="https://www.bankatfirst.com/content/dam/bankatfirst/personal/discover/flourish/yc-grow-wealth-article-1536x755.jpg" alt="wealth">
+</div>
+
+<header style="background-color: #717f71;padding: 30px;text-align: center;font-size: 35px;color: white;">
     <h1>The Wealthiest Wealthsite</h1>
     <p>the website that explains wealth</p>
 </header>
+
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html"><h2>Home</h2></a></li>
+      <li><a href="time.html"><h2>Time</h2></a></li>
+      <li><a href="social.html"><h2>Social</h2></a></li>
+      <li><a href="physical.html"><h2>Physical</h2></a></li>
+      <li><a href="mental.html"><h2>Mental</h2></a></li>
+      <li><a href="financial.html"><h2>Financial</h2></a></li>
+    </ul>
+  </nav>
+</header>
+
 <section>
-    <nav>
-        <a href="index.html"><h2>Home</h2></a>
-        <a href="time.html"><h2>Time</h2></a>
-        <a href="social.html"><h2>Social</h2></a>
-        <a href="physical.html"><h2>Physical</h2></a>
-        <a href="mental.html"><h2>Mental</h2></a>
-        <a href="financial.html"><h2>Financial</h2></a>
-    </nav>
-    <article>
-        <h2>physical</h2>
-        <p>you are healthy</p>
-    </article>
+  <nav>
+
+  </nav>
+  <article>
+    <h2>Physical</h2>
+    <p>you are healthy</p>
+  </article>
 </section>
 <footer>
 <p>the wealthiest wealthsite ends</p>
