@@ -7,33 +7,38 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     .crop-container {
-    width: 100%px;  /* Set the desired width for the cropped area */
-    height: 300px; /* Set the desired height for the cropped area */
-    overflow: hidden; /* Ensures any part of the image outside the container is hidden */
+    width: 100%px;
+    height: 300px;
+    overflow: hidden;
   }
+
     .crop-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scales the image to cover the entire container while maintaining its aspect ratio. Excess parts are cropped */
-    object-position: center; /* Adjust the focal point (e.g., top, bottom, left, right, or pixel values) */
+    object-fit: cover;
+    object-position: center;
   }
+
   section {
     display: -webkit-flex;
     display: flex;
   }
+
   article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding: 10px;
   }
+
   footer {
     background-color: #566856;
     padding: 10px;
     text-align: center;
     color: white;
   }
+
   * {
     margin: 0;
     padding: 0;
@@ -44,27 +49,42 @@
     font-family: sans-serif;
   }
 
-  /* Navbar Container Styling */
   .navbar ul {
-    list-style-type: none; /* Removes bullet points */
-    background-color: #333; /* Dark background color */
-    display: flex; /* Enables Flexbox layout */
-    justify-content: center; /* Centers the links horizontally */
-    overflow: hidden; /* Recommended for float methods, good general practice */
+    list-style-type: none;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 
-  /* List Item Styling */
   .navbar li a {
-    display: block; /* Makes the entire area of the link clickable and allows padding */
-    color: white; /* White text color */
+    display: block;
+    color: white;
     text-align: center;
-    padding: 14px 16px; /* Spacing inside the links */
-    text-decoration: none; /* Removes underlines from links */
+    padding: 14px 16px;
+    text-decoration: none;
   }
 
-  /* Hover Effect */
   .navbar li a:hover {
-    background-color: #111; /* Changes background color on hover */
+    background-color: #111;
+  }
+
+  .leftside {
+    background-color: #ffffff;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+
+  .rightside {
+    background-color: #ffffff;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
   }
   </style>
 </head>
@@ -93,13 +113,15 @@
 </header>
 
 <section>
-  <nav>
-
-  </nav>
+  <div class="leftside">
+  </div>
   <article>
-    <h2>Physical</h2>
-    <p>you are healthy</p>
+    <h2 style="font-size: xx-large;">Physical Wealth</h2>
+    <h3>Definition:</h3>
+    <p>Physical wealth is the foundational, compounding, and sustainable state of having high-level health, energy, and physical vitality.</p>
   </article>
+  <div class="rightside">
+  </div>
 </section>
 <footer>
 <p>the wealthiest wealthsite ends</p>
